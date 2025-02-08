@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Generated Questions</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            margin: 20px;
+        }
+        .container {
+            max-width: 800px;
+            margin: 0 auto;
+        }
+        h1 {
+            color: #333;
+        }
+        .question {
+            margin-bottom: 20px;
+            padding: 15px;
+            border: 1px solid #ddd;
+            border-radius: 5px;
+        }
+        .question h3 {
+            margin-top: 0;
+        }
+        .download-link {
+            display: inline-block;
+            margin-top: 20px;
+            padding: 10px 20px;
+            background-color: #007bff;
+            color: white;
+            text-decoration: none;
+            border-radius: 5px;
+        }
+        .download-link:hover {
+            background-color: #0056b3;
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <h1>Generated Short Answer Questions</h1>
+
+        <!-- Display questions and answers -->
+        {% for question in questions %}
+            <div class="question">
+                <h3>Question {{ loop.index }}:</h3>
+                <p>{{ question.question }}</p>
+                <h3>Answer:</h3>
+                <p>{{ question.answer }}</p>
+            </div>
+        {% endfor %}
+
+        <!-- Download link -->
+        <a href="/download/{{ txt_filename }}" class="download-link">Download Questions</a>
+    </div>
+</body>
+</html>

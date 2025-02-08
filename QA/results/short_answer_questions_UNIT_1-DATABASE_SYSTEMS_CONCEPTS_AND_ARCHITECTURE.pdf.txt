@@ -1,0 +1,17 @@
+Question 1: What was the focus of the File-Based Era?
+Answer: using magnetic tapes and sequential file systems to store
+and retrieve data
+
+Question 2: What was the main motivation for DBMSs?
+Answer: providing data independence
+
+Question 3: What did the growth of applications, big data, and need for efficient querying push the need for
+Answer: these systems
+
+Question 4: What did the development of the entity-relationship model include?
+Answer: conceptual data modeling
+
+Question 5: What is the main reason for normalization of data?
+Answer: eliminating
+unnecessary duplication
+
